@@ -1,0 +1,37 @@
+{
+  "skill": "cybersecurity-report",
+  "test_cases": [
+    {
+      "name": "incident_response_report",
+      "input": "Write a professional incident response report for a ransomware incident that started with a phishing email, affected the finance department, and resulted in 2 days of downtime.",
+      "assertions": [
+        "Includes an executive summary suitable for leadership",
+        "Contains a timeline of events",
+        "Addresses business impact",
+        "Provides prioritized recommendations",
+        "Uses professional, evidence-based language"
+      ]
+    },
+    {
+      "name": "cti_report",
+      "input": "Create a cyber threat intelligence report on a new threat actor using living-off-the-land techniques targeting manufacturing companies.",
+      "assertions": [
+        "Includes actor snapshot or equivalent profile",
+        "Maps techniques to MITRE ATT&CK",
+        "States confidence levels on key judgments",
+        "Provides defensive implications or recommendations",
+        "Separates observation from assessment"
+      ]
+    },
+    {
+      "name": "executive_summary",
+      "input": "Write an executive summary for the board summarizing this quarter's security posture, including a rise in credential-based attacks and successful patching of critical vulnerabilities.",
+      "assertions": [
+        "Can be understood without deep technical knowledge",
+        "Focuses on business risk and impact",
+        "Includes key findings and recommendations",
+        "Avoids unnecessary jargon"
+      ]
+    }
+  ]
+}

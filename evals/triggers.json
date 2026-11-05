@@ -1,0 +1,29 @@
+{
+  "skill": "cybersecurity-report",
+  "test_cases": [
+    {
+      "input": "Write a professional incident response report for a data breach",
+      "should_trigger": true
+    },
+    {
+      "input": "Create a threat intelligence report in the style of Mandiant or CrowdStrike",
+      "should_trigger": true
+    },
+    {
+      "input": "Help me write a cybersecurity board report",
+      "should_trigger": true
+    },
+    {
+      "input": "Summarize the latest CVE",
+      "should_trigger": false
+    },
+    {
+      "input": "Write a penetration test report",
+      "should_trigger": true
+    },
+    {
+      "input": "Explain what MITRE ATT&CK is",
+      "should_trigger": false
+    }
+  ]
+}
