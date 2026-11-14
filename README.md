@@ -33,6 +33,8 @@ cybersecurity-report-skill/
 ├── evals/
 │   ├── evals.json           # Test cases
 │   └── triggers.json        # Trigger phrases
+├── scripts/
+│   └── validate.py          # Package validator (used by CI)
 └── references/
     ├── report-templates.md  # Section templates
     ├── style-examples.md    # Language patterns from leading reports
@@ -41,13 +43,31 @@ cybersecurity-report-skill/
 
 ## How to Use
 
-Place the skill in your AI model's skills directory (e.g., `.grok/skills/cybersecurity-report/` or equivalent for Claude/other systems).
+Clone the repository into your AI tool's skills directory under the skill's name, `cybersecurity-report`. For example:
+
+```bash
+# Claude Code (personal skills)
+git clone https://github.com/spoukidev/cybersecurity-report-skill.git ~/.claude/skills/cybersecurity-report
+
+# Grok or another tool that reads a skills folder
+git clone https://github.com/spoukidev/cybersecurity-report-skill.git .grok/skills/cybersecurity-report
+```
 
 The skill triggers on requests such as:
 - "Write a professional incident response report..."
 - "Create a threat intelligence report in Mandiant/CrowdStrike style..."
 - "Write a cybersecurity board report..."
 - "Produce an executive summary of this quarter's security posture..."
+
+## Validating changes
+
+Run the stdlib-only validator before committing. CI runs it on every push and pull request:
+
+```bash
+python3 scripts/validate.py
+```
+
+It checks the `SKILL.md` frontmatter, that every referenced `references/` and `evals/` file exists, and that the eval JSON is well-formed.
 
 ## License
 
