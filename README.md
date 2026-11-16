@@ -1,5 +1,7 @@
 # Cybersecurity Report Skill
 
+[![CI](https://github.com/spoukidev/cybersecurity-report-skill/actions/workflows/validate.yml/badge.svg)](https://github.com/spoukidev/cybersecurity-report-skill/actions/workflows/validate.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 Professional cybersecurity report writing skill for AI models (Claude, Grok, and others).
 
 Inspired by the structure, tone, and rigor of leading industry publications:
